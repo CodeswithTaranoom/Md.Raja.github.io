@@ -1,99 +1,74 @@
-/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
-        background-color: #f0f8ff;
-            margin: 0;
-                padding: 0;
-                    text-align: center;
-                        color: #333;
-                        }
+  font-family: 'Arial', sans-serif;
+  background: #eef5fb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
 
-                        /* Header Styling */
-                        header {
-                            background-color: #1e90ff;
-                                color: white;
-                                    padding: 30px 0;
-                                        animation: fadeInDown 2s;
-                                        }
+header {
+  background: #2196F3;
+  color: white;
+  padding: 20px 0;
+  animation: slidein 2s ease;
+}
 
-                                        header h1 {
-                                            margin: 0;
-                                                font-size: 48px;
-                                                }
+@keyframes slidein {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
 
-                                                header p {
-                                                    margin-top: 10px;
-                                                        font-size: 20px;
-                                                        }
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
 
-                                                        /* Navigation Bar */
-                                                        nav {
-                                                            background-color: #333;
-                                                                padding: 10px 0;
-                                                                }
+section {
+  padding: 30px 10px;
+  animation: fadein 1s ease;
+}
 
-                                                                nav a {
-                                                                    color: white;
-                                                                        text-decoration: none;
-                                                                            margin: 0 15px;
-                                                                                font-size: 18px;
-                                                                                    transition: color 0.3s;
-                                                                                    }
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
-                                                                                    nav a:hover {
-                                                                                        color: #ff4500;
-                                                                                        }
+h2 {
+  color: #2196F3;
+}
 
-                                                                                        /* Section Styling */
-                                                                                        section {
-                                                                                            padding: 40px 20px;
-                                                                                                animation: fadeInUp 1.5s;
-                                                                                                }
+.pay-btn {
+  display: inline-block;
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+}
 
-                                                                                                section h2 {
-                                                                                                    color: #1e90ff;
-                                                                                                        font-size: 32px;
-                                                                                                            margin-bottom: 20px;
-                                                                                                            }
+.pay-btn:hover {
+  background: #388E3C;
+}
 
-                                                                                                            ul {
-                                                                                                                list-style-type: none;
-                                                                                                                    padding: 0;
-                                                                                                                    }
+form input, form button {
+  padding: 8px;
+  margin: 5px;
+  width: 200px;
+}
 
-                                                                                                                    ul li {
-                                                                                                                        font-size: 20px;
-                                                                                                                            margin: 10px 0;
-                                                                                                                            }
+form button {
+  background: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
 
-                                                                                                                            /* Footer */
-                                                                                                                            footer {
-                                                                                                                                background-color: #333;
-                                                                                                                                    color: white;
-                                                                                                                                        padding: 20px 0;
-                                                                                                                                            margin-top: 30px;
-                                                                                                                                            }
-
-                                                                                                                                            /* Animations */
-                                                                                                                                            @keyframes fadeInDown {
-                                                                                                                                                from {
-                                                                                                                                                        opacity: 0;
-                                                                                                                                                                transform: translateY(-40px);
-                                                                                                                                                                    }
-                                                                                                                                                                        to {
-                                                                                                                                                                                opacity: 1;
-                                                                                                                                                                                        transform: translateY(0);
-                                                                                                                                                                                            }
-                                                                                                                                                                                            }
-
-                                                                                                                                                                                            @keyframes fadeInUp {
-                                                                                                                                                                                                from {
-                                                                                                                                                                                                        opacity: 0;
-                                                                                                                                                                                                                transform: translateY(40px);
-                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                        to {
-                                                                                                                                                                                                                                opacity: 1;
-                                                                                                                                                                                                                                        transform: translateY(0);
-                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                            }
+footer {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
                                                                                                                                                                                                                                             
